@@ -12,15 +12,14 @@ dugme.addEventListener("click", () => {
     return;
   }
 
-  // Prikazuje unos isključivo kao običan tekst.
-  // HTML, JavaScript i event handleri se NE izvršavaju.
-  paragraf.textContent = "zdravo " + tekst;
+  // Bezbedno prikazivanje: unos se tretira kao običan tekst.
+  paragraf.textContent = "Zdravo " + tekst;
 
   input.value = "";
   input.focus();
 });
 
-// Omogućava slanje pritiskom na Enter.
+// Slanje pritiskom na Enter
 input.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     dugme.click();
