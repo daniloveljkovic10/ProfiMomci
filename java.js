@@ -14,7 +14,7 @@ dugme.addEventListener("click", () => {
 
   // Prikazuje unos isključivo kao običan tekst.
   // HTML, JavaScript i event handleri se NE izvršavaju.
-  paragraf.textContent = tekst;
+  paragraf.textContent = "zdravo " + tekst;
 
   input.value = "";
   input.focus();
